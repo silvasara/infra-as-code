@@ -10,3 +10,6 @@ variable "instance_type" {
   default     = ["t2.micro", "t3.medium"]
   description = "The list of instance type"
 }
+
+variable "blocks" {
+}
