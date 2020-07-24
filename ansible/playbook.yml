@@ -23,3 +23,16 @@
       copy: 
         src: index.html
         dest: /var/www/html/index.html
+
+    - name: Copying nginx.conf
+      copy:
+        src: nginx.conf
+        dest: /etc/nginx/nginx.conf
+      notify: Restarting the Nginx
+
+  handlers:
+    - name: Restarting the Nginx
+      service:
+         name: nginx
+         state: restarted
+
