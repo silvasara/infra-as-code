@@ -24,7 +24,7 @@ resource "aws_instance" "web" {
   }
 
   tags = {
-    Name = "my-first-ami"
+    Name = "my-first-instance"
   }
 }
 

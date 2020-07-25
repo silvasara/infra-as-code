@@ -1,0 +1,8 @@
+---
+instance_type: t2.micro
+sec_group_name: giropops
+image: ami-0faf2c48fc9c8f966
+keypair: ansible-class
+region: sa-east-1
+count: 3
+profile: default 
